@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+header {
+   padding: 0;
+   margin: 0;
+   position: absolute;
+   width: 100%;
+   height: 200px;
+   display: flex;
+   justify-content: flex-end;
+   
+}
+header li {
+    padding-right: 50px;
+    list-style-type: none;
+    float: left;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    margin-top: 15px;
+}
+ol{
+    margin-right: 40px;
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+ ol a:hover {
+     color: black;
+    background-color: white;
+}
+
+section.first {
+    width: 100%;
+    height: 100vh;
+}
+
+.first {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+    background-image: url(https://images.unsplash.com/photo-1617042375876-a13e36732a04?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+    background-size: cover;
+    
+}
+
+.active{
+   opacity: 0;
+}
+#znak1 {
+    position: absolute;
+    margin: 0;
+    top: 810px;
+    letter-spacing: -10px;
+    opacity: 0.5;
+    font-weight: bold;
+}
+.dol{
+    position: absolute;
+    margin: 0;
+    top: 900px;
+    letter-spacing: -12px;
+    opacity: 0.5;
+    transform: translateY(60px);
+}
+#two{
+    width: 100%;
+    height: 100vh;
+    background-color: #00032b;
+}
+.two > div{
+     position: absolute;
+     min-width: 65vh;
+     min-height: 85%;
+     margin-top: 5%;
+}
+.bck1{
+    left: 10%;
+    opacity: 0.1;
+    background-color: white;
+}
+.bck2{
+    left: 55%;
+    background-color: white;
+    opacity: 0.1;
+}     
+

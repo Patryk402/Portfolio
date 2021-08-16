@@ -1,7 +1,7 @@
 const welcome = document.querySelector(".welcome");
 const migacz = document.getElementById("act");
 const strzalka = document.getElementById("znak1");
-const txtWelcome = ['Hello','My name is Patryk','Front-end developer',"let's check out more information about Me in the below"];
+const txtWelcome = ['Hello','My name is Patryk','Front-end developer',"let's check out more info about Me in the below"];
 let index = 0;
 let letters = -5;
 

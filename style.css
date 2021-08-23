@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap');
 html{
     scroll-behavior: smooth;
 }
@@ -15,15 +17,14 @@ header {
    height: 200px;
    display: flex;
    justify-content: flex-end;
-   
 }
 header li {
     padding-right: 50px;
     list-style-type: none;
-    float: left;
-    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    font-family: 'Urbanist', sans-serif;
     font-weight: bold;
-    margin-top: 15px;
+    margin-top: 25px;
 }
 ol{
     margin-right: 40px;
@@ -37,26 +38,22 @@ a {
     transition: 0.5s;
 }
  ol a:hover {
-     color: black;
-    background-color: white;
+    background-color: rgba(45, 52, 54,1.0);
 }
 
-section.first {
-    width: 100%;
-    height: 100vh;
-}
 
 .first {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 30px;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 35px;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     background-attachment: fixed;
-    background-image: url(https://images.unsplash.com/photo-1617042375876-a13e36732a04?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+    background-image: url(bgtext.jpg);
     background-size: cover;
-    
+    background-position: center;
+    height: 100vh;
 }
 
 .active{
@@ -68,7 +65,6 @@ section.first {
     top: 810px;
     letter-spacing: -10px;
     opacity: 0.5;
-    font-weight: bold;
 }
 .dol{
     position: absolute;
@@ -78,25 +74,205 @@ section.first {
     opacity: 0.5;
     transform: translateY(60px);
 }
-#two{
-    width: 100%;
-    height: 100vh;
-    background-color: white;
-}
+
 .two > div{
-     position: absolute;
-     min-width: 65vh;
-     min-height: 85%;
-     margin-top: 5%;
+    position: absolute;
 }
+.prog{
+    top: 195%;
+    left: 32%;
+    border-radius: 30px;
+    min-height: 85%;
+}
+.fa-github,.fa-js,.fa-html5,.fa-css3{
+    position: absolute;
+    color: #f1c40f;
+    font-size: 60px;
+}
+.fa-html5 {
+    top: 20%;
+    left: 16%;
+}
+.fa-html5 > div{
+    position: absolute;
+    width: 550px;
+    height: 35px;
+    top: 10px;
+    left: 150%;
+    box-shadow: 1px 1px 15px 5px black;
+    border-radius: 100px;
+    transition: 3s;
+}
+.fa-html5 > div > span{
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    border-radius: 100px;
+    background-color: rgba(45, 52, 54,1.0);
+    transition: 3s;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+.fa-css3{
+    top: 35%;
+    left:  15%;
+}
+
+.fa-css3 > div{
+    position: absolute;
+    width: 550px;
+    height: 35px;
+    top: 10px;
+    left: 125%;
+    box-shadow: 1px 1px 15px 5px rgba(45, 52, 54,1.0);;
+    border-radius: 100px;
+    transition: 3s;
+}
+
+.fa-css3 > div > span{
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    border-radius: 100px;
+    background-color: rgba(45, 52, 54,1.0);
+    transition: 3s;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+.fa-js{
+    top: 50%;
+    left:  15%;
+}
+.fa-js > div{
+    position: absolute;
+    width: 550px;
+    height: 35px;
+    top: 10px;
+    left: 145%;
+    box-shadow: 1px 1px 15px 5px rgba(45, 52, 54,1.0);;
+    border-radius: 100px;
+    transition: 3s;
+}
+
+.fa-js > div > span{
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    border-radius: 100px;
+    background-color: #f1c40f;
+    transition: 3s;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+.fa-github{
+    top: 65%;
+    left:  15%;
+}
+.fa-github > div{
+    position: absolute;
+    width: 550px;
+    height: 35px;
+    top: 10px;
+    left: 125%;
+    box-shadow: 1px 1px 15px 5px black;
+    border-radius: 100px;
+    transition: 3s;
+}
+
+.fa-github > div > span{
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    border-radius: 100px;
+    background-color: rgba(45, 52, 54,1.0);
+    transition: 3s;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    text-transform: lowercase;
+}
+
 .bck1{
-    left: 10%;
-    opacity: 0.1;
     background-color: black;
+    height: 100vh;
+    width: 1px;
+    left: 50%;
+    top: 110%;
+    z-index: 1;
+    opacity: 0.1;
+    border-radius: 30px;
+}
+
+
+.abt{
+    margin-top: 60%;
+    margin-top: 16%;
+    left: 35%;
+    width: 450px;
+    z-index: 2;
+    opacity: 0;
+} 
+
+.abt > p{
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: rgba(45, 52, 54,1.0);
+}
+img{
+    position: absolute;
+    left: 480px;
+    top: 80px;
+    width: 150px;
+    border-radius: 20px;
 }
 .bck2{
-    left: 55%;
-    background-color: black;
-    opacity: 0.1;
-}     
+    z-index: 1;
+    margin-top: 15%;
+    width: 45%;
+    height: 470px;
+    background-color: rgba(45, 52, 54,1.0);
+    box-shadow: 1px 1px 7px 5px black;
+    left: 29%;
+    opacity: 0.2;
+    border-radius: 20px;
+}
+@media screen and (max-width: 768px) {
 
+    header {
+        justify-content: center;
+     }
+
+    .first {
+        font-size: 20px;
+        background-size: 65em;
+    }
+
+    .prog{
+        top: 170%;
+        left: 7%;
+        border-radius: 30px;
+        min-height: 85%;
+    }
+
+    img{
+        left: 100px;
+        width: 100px;
+    }   
+    .two > div{
+        display: flex;
+    }
+    .bck2{
+    top: 110%;
+    width: 75%;
+    left: 15%;
+    }
+
+}

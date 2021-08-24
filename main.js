@@ -1,7 +1,7 @@
 const welcome = document.querySelector(".welcome");
 const migacz = document.getElementById("act");
 const strzalka = document.getElementById("znak1");
-const txtWelcome = ['WITAJ','MAM NA IMIE PATRYK','JESTEM FRONT-END DEVELOPEREM'];
+const txtWelcome = ['WITAJ','MAM NA IMIE PATRYK','MOJA PASJA JEST PROGRAMOWANIE'];
 let index = 0;
 let letters = -5;
 
@@ -70,6 +70,12 @@ setInterval(line,400);
 window.addEventListener("scroll", ()=> {
     
     if(window.pageYOffset > 510){
+        document.getElementById("abt").style.opacity = "1";
+        document.getElementById("abt").style.marginTop ="18%";
+        document.getElementById("abt").style.transition = "2s";
+    } 
+
+    if(window.pageYOffset > 1210){
         
         document.getElementById("htmlBAR").style.width = "70%";
         document.getElementById("htmlBAR").textContent = "70%";
@@ -79,9 +85,6 @@ window.addEventListener("scroll", ()=> {
         document.getElementById("jsBAR").textContent = "50%";
         document.getElementById("gitBAR").style.width = "20%";
         document.getElementById("gitBAR").textContent = "20%";
-        document.getElementById("abt").style.opacity = "1";
-        document.getElementById("abt").style.marginTop ="17%";
-        document.getElementById("abt").style.transition = "2s";
     } 
 
 });

@@ -69,10 +69,10 @@ setInterval(line,400);
 
 window.addEventListener("scroll", ()=> {
     
-    if(window.pageYOffset > 510){
+    if(window.pageYOffset > 540){
         document.getElementById("abt").style.opacity = "1";
         document.getElementById("abt").style.marginTop ="18%";
-        document.getElementById("abt").style.transition = "2s";
+        document.getElementById("abt").style.transition = "1s";
     } 
 
     if(window.pageYOffset > 1210){

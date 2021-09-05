@@ -71,8 +71,8 @@ window.addEventListener("scroll", ()=> {
     
     if(window.pageYOffset > 540){
         document.getElementById("abt").style.opacity = "1";
-        document.getElementById("abt").style.marginTop ="18%";
-        document.getElementById("abt").style.transition = "1s";
+        document.getElementById("abt").style.transition = "2s";
+       document.getElementById("style1").classList.add("style1");
     } 
 
     if(window.pageYOffset > 1210){

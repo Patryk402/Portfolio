@@ -78,13 +78,10 @@ window.addEventListener("scroll", ()=> {
     if(window.pageYOffset > 1210){
         
         document.getElementById("htmlBAR").style.width = "70%";
-        document.getElementById("htmlBAR").textContent = "70%";
         document.getElementById("cssBAR").style.width = "60%";
-        document.getElementById("cssBAR").textContent = "60%";
         document.getElementById("jsBAR").style.width = "50%";
-        document.getElementById("jsBAR").textContent = "50%";
         document.getElementById("gitBAR").style.width = "20%";
-        document.getElementById("gitBAR").textContent = "20%";
+       
     } 
 
 });

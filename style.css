@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap");
+html {
+	scroll-behavior: smooth;
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+header {
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+}
+header li {
+	padding-right: 50px;
+	list-style-type: none;
+	text-align: center;
+	font-family: "Urbanist", sans-serif;
+	font-weight: bold;
+	margin-top: 25px;
+	float: left;
+}
+header ol {
+	margin-right: 25%;
+}
+header ol a {
+	text-decoration: none;
+	color: #353b48;
+	-webkit-box-shadow: 1px 1px 4px 1px #353b48;
+	box-shadow: 1px 1px 4px 1px #353b48;
+	font-size: 22px;
+	padding: 5px;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+}
+header ol a:hover {
+	background-color: #151617;
+	color: white;
+	-webkit-box-shadow: 1px 1px 5px 1px #151617;
+	box-shadow: 1px 1px 5px 1px #151617;
+}
+.first {
+	font-family: "Cabin", sans-serif;
+	font-size: 30px;
+	color: #353b48;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	background-attachment: fixed;
+	background-image: url(bgtower.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+.first .welcome {
+	margin-left: 150px;
+}
+.first #act {
+	padding: auto;
+	font-size: 40px;
+	height: 1.3em;
+	font-family: "Cabin", sans-serif;
+}
+.first .active {
+	opacity: 0;
+}
+.two {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 40% 50%;
+	grid-template-columns: 40% 50%;
+	margin: 0 auto;
+	height: 100vh;
+	background-color: #ecf0f1;
+}
+.two img {
+	-webkit-transform: translateX(80%) translateY(20%);
+	transform: translateX(80%) translateY(20%);
+	width: 500px;
+	height: 700px;
+}
+.two .abt {
+	-webkit-transform: translateX(20%) translateY(40%);
+	transform: translateX(20%) translateY(40%);
+	width: 600px;
+	z-index: 2;
+	opacity: 0;
+	margin: 0 auto;
+}
+.two .abt .style1 {
+	height: 2px;
+	background-color: #2d3436;
+	margin-bottom: 30px;
+	-webkit-animation: progress-animation 2s forwards;
+	animation: progress-animation 2s forwards;
+}
+@-webkit-keyframes progress-animation {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 40%;
+	}
+}
+@keyframes progress-animation {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 40%;
+	}
+}
+@keyframes progress-animation {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 40%;
+	}
+}
+.two .abt .bck1 {
+	position: absolute;
+	height: 50px;
+	width: 200px;
+	background-image: -webkit-gradient(
+		linear,
+		right top,
+		left top,
+		from(#090909),
+		color-stop(#151617),
+		color-stop(#1e1f21),
+		color-stop(#25292c),
+		to(#2d3436)
+	);
+	background-image: linear-gradient(
+		to left,
+		#090909,
+		#151617,
+		#1e1f21,
+		#25292c,
+		#2d3436
+	);
+	-webkit-transform: translateY(-7em) translateX(-1em);
+	transform: translateY(-7em) translateX(-1em);
+	z-index: -1;
+}
+.two .abt h1 {
+	font-family: "Cabin", sans-serif;
+	font-size: 2em;
+	margin-bottom: 30px;
+	color: whitesmoke;
+	z-index: 0;
+}
+.two .abt p {
+	font-size: 22px;
+	font-family: "Roboto Mono", monospace;
+	font-weight: 900;
+	color: #151617;
+}
+.three {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 30% 50%;
+	grid-template-columns: 30% 50%;
+	height: 80vh;
+}
+.three .progBck {
+	position: absolute;
+	height: 600px;
+	width: 750px;
+	background-image: -webkit-gradient(
+		linear,
+		right top,
+		left top,
+		from(#090909),
+		color-stop(#151617),
+		color-stop(#1e1f21),
+		color-stop(#25292c),
+		to(#2d3436)
+	);
+	background-image: linear-gradient(
+		to left,
+		#090909,
+		#151617,
+		#1e1f21,
+		#25292c,
+		#2d3436
+	);
+	-webkit-transform: translateX(50%) translateY(10%);
+	transform: translateX(50%) translateY(10%);
+	z-index: 0;
+}
+.three .prog h1 {
+	margin-top: 100px;
+	-webkit-transform: translateX(80%);
+	transform: translateX(80%);
+	font-family: "Cabin", sans-serif;
+	font-size: 2em;
+	color: whitesmoke;
+}
+.three .github,
+.three .js,
+.three .html5,
+.three .css3 {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: auto;
+	grid-template-columns: auto;
+	-webkit-transform: translateY(300%) translateX(85%);
+	transform: translateY(300%) translateX(85%);
+	margin-bottom: 80px;
+	width: 550px;
+	height: 10px;
+	border-radius: 100px;
+	-webkit-transition: 3s;
+	transition: 3s;
+	letter-spacing: 2px;
+	color: whitesmoke;
+	-webkit-box-shadow: 1px 1px 7px 3px gray;
+	box-shadow: 1px 1px 7px 3px gray;
+	font-family: "Cabin", sans-serif;
+}
+.three .github span,
+.three .js span,
+.three .html5 span,
+.three .css3 span {
+	position: absolute;
+	width: 10%;
+	height: 10px;
+	border-radius: 100px;
+	-webkit-transition: 3s;
+	transition: 3s;
+	text-align: center;
+	font-size: 30px;
+	background-color: whitesmoke;
+}
+.three img {
+	-webkit-transform: translateX(100%) translateY(10%);
+	transform: translateX(100%) translateY(10%);
+	width: 500px;
+	height: 600px;
+}
+@media screen and (max-width: 768px) {
+	header {
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+	}
+	.first {
+		font-size: 20px;
+		background-size: 65em;
+	}
+	.prog {
+		top: 170%;
+		left: 7%;
+		border-radius: 30px;
+		min-height: 85%;
+	}
+	img {
+		left: 100px;
+		width: 100px;
+	}
+}
+/*# sourceMappingURL=style.css.map */

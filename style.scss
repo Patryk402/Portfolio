@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+header {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  li {
+    padding-right: 50px;
+    list-style-type: none;
+    text-align: center;
+    font-family: "Urbanist", sans-serif;
+    font-weight: bold;
+    margin-top: 25px;
+    float: left;
+  }
+  ol {
+    margin-right: 25%;
+    a {
+      text-decoration: none;
+      color: #353b48;
+      box-shadow: 1px 1px 4px 1px #353b48;
+      font-size: 22px;
+      padding: 5px;
+      transition: 0.5s;
+    }
+    a:hover {
+      background-color: #151617;
+      color: white;
+      box-shadow: 1px 1px 5px 1px #151617;
+    }
+  }
+}
+
+.first {
+  font-family: "Cabin", sans-serif;
+  font-size: 30px;
+  color: #353b48;
+  display: flex;
+  align-items: center;
+  background-attachment: fixed;
+  background-image: url(bgtower.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  .welcome {
+    margin-left: 150px;
+  }
+  #act {
+    padding: auto;
+    font-size: 40px;
+    height: 1.3em;
+    font-family: "Cabin", sans-serif;
+  }
+  .active {
+    opacity: 0;
+  }
+}
+
+.two {
+  display: grid;
+  grid-template-columns: 40% 50%;
+  margin: 0 auto;
+  height: 100vh;
+  background-color: #ecf0f1;
+  img {
+    transform: translateX(80%) translateY(20%);
+    width: 500px;
+    height: 700px;
+  }
+  .abt {
+    transform: translateX(20%) translateY(40%);
+    width: 600px;
+    z-index: 2;
+    opacity: 0;
+    margin: 0 auto;
+    .style1 {
+      height: 2px;
+      background-color: #2d3436;
+      margin-bottom: 30px;
+      animation: progress-animation 2s forwards;
+    }
+    @keyframes progress-animation {
+      0% {
+        width: 0%;
+      }
+      100% {
+        width: 40%;
+      }
+    }
+    @keyframes progress-animation {
+      0% {
+        width: 0%;
+      }
+      100% {
+        width: 40%;
+      }
+    }
+    .bck1 {
+      position: absolute;
+      height: 50px;
+      width: 200px;
+      background-image: linear-gradient(
+        to left,
+        #090909,
+        #151617,
+        #1e1f21,
+        #25292c,
+        #2d3436
+      );
+      transform: translateY(-7em) translateX(-1em);
+      z-index: -1;
+    }
+    h1 {
+      font-family: "Cabin", sans-serif;
+      font-size: 2em;
+      margin-bottom: 30px;
+      color: whitesmoke;
+      z-index: 0;
+    }
+    p {
+      font-size: 22px;
+      font-family: "Roboto Mono", monospace;
+      font-weight: 900;
+      color: #151617;
+    }
+  }
+}
+
+.three {
+  display: grid;
+  grid-template-columns: 30% 50%;
+  height: 80vh;
+  .progBck {
+    position: absolute;
+    height: 600px;
+    width: 750px;
+    background-image: linear-gradient(
+      to left,
+      #090909,
+      #151617,
+      #1e1f21,
+      #25292c,
+      #2d3436
+    );
+    transform: translateX(50%) translateY(10%);
+    z-index: 0;
+  }
+  .prog {
+    h1 {
+      margin-top: 100px;
+      transform: translateX(80%);
+      font-family: "Cabin", sans-serif;
+      font-size: 2em;
+      color: whitesmoke;
+      // letter-spacing: 5px;
+    }
+  }
+  .github,
+  .js,
+  .html5,
+  .css3 {
+    display: grid;
+    grid-template-columns: auto;
+    transform: translateY(300%) translateX(85%);
+    margin-bottom: 80px;
+    width: 550px;
+    height: 10px;
+    border-radius: 100px;
+    transition: 3s;
+    letter-spacing: 2px;
+    color: whitesmoke;
+    box-shadow: 1px 1px 7px 3px gray;
+    font-family: "Cabin", sans-serif;
+  }
+  .github span,
+  .js span,
+  .html5 span,
+  .css3 span {
+    position: absolute;
+    width: 10%;
+    height: 10px;
+    border-radius: 100px;
+    transition: 3s;
+    text-align: center;
+    font-size: 30px;
+    background-color: whitesmoke;
+    // opacity: 0.1;
+  }
+
+  img {
+    transform: translateX(100%) translateY(10%);
+    width: 500px;
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    justify-content: center;
+  }
+  .first {
+    font-size: 20px;
+    background-size: 65em;
+  }
+  .prog {
+    top: 170%;
+    left: 7%;
+    border-radius: 30px;
+    min-height: 85%;
+  }
+  img {
+    left: 100px;
+    width: 100px;
+  }
+}
